@@ -10,7 +10,7 @@ namespace Algorithm
             var line = Console.ReadLine();
             int inputValue = int.Parse(line);
 
-            var result = SimpleFibonacci.Calculate(inputValue);
+            var result = SimpleFibonacci.Calculate(inputValue); 
 
             Console.WriteLine(result);
         }
