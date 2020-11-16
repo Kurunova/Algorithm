@@ -7,9 +7,12 @@ namespace Algorithm
     {
         static void Main(string[] args)
         {
-            var fibonacci = Fibonacci.Calculate(3);
+            var line = Console.ReadLine();
+            int inputValue = int.Parse(line);
 
-            Console.WriteLine(fibonacci);
+            var result = SimpleFibonacci.Calculate(inputValue);
+
+            Console.WriteLine(result);
         }
     }
 }

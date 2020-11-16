@@ -18,7 +18,7 @@ namespace Algorithm.Tests
         [TestCase(9, 34)]
         public void Check(int n, int result)
         {
-            var calculated = Fibonacci.Calculate(n);
+            var calculated = SimpleFibonacci.Calculate(n);
 
             Assert.AreEqual(calculated, result);
         }

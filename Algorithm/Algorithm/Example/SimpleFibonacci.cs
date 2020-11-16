@@ -1,6 +1,6 @@
 ﻿namespace Algorithm.Example
 {
-    public class Fibonacci
+    public class SimpleFibonacci
     {
         public static int Calculate(int n)
         {
