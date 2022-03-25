@@ -1,4 +1,4 @@
-using Algorithm.Example;
+using Algorithm.Fibonacci;
 using NUnit.Framework;
 
 namespace Algorithm.Tests

@@ -1,4 +1,4 @@
-﻿namespace Algorithm.Example
+﻿namespace Algorithm.Fibonacci
 {
     public class FibonacciLastNumber
     {

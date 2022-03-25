@@ -1,5 +1,5 @@
-﻿using System;
-using Algorithm.Example;
+﻿using Algorithm.Common;
+using Algorithm.StringAlgorithm;
 
 namespace Algorithm
 {
@@ -7,12 +7,11 @@ namespace Algorithm
     {
         static void Main(string[] args)
         {
-            var line = Console.ReadLine();
-            int inputValue = int.Parse(line);
-
-            var result = SimpleFibonacci.Calculate(inputValue); 
-
-            Console.WriteLine(result);
+            // IExecute fibonacciExecutor = new FibonacciExecutor();
+            // fibonacciExecutor.Execute();
+            
+            IExecute longestCommonSubsequenceExecutor = new LongestCommonSubsequenceExecutor();
+            longestCommonSubsequenceExecutor.Execute();
         }
     }
 }
