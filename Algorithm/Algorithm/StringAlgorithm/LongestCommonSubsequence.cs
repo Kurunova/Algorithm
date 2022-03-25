@@ -2,6 +2,11 @@
 
 namespace Algorithm.StringAlgorithm
 {
+	/// <summary>
+	/// A string is said to be a child of a another string if it can be formed by deleting 0 or more characters from the other string.
+	/// Letters cannot be rearranged.
+	/// Given two strings of equal length, what's the longest string that can be constructed such that it is a child of both?
+	/// </summary>
 	public class LongestCommonSubsequence
 	{
 		public static int Execute(string str1, string str2)
@@ -18,7 +23,7 @@ namespace Algorithm.StringAlgorithm
 				}
 			}
 
-			return arr[str1.Length+1, str2.Length+1];
+			return arr[str1.Length, str2.Length];
 		}
 	}
 }
