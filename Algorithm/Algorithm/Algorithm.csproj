@@ -54,6 +54,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringAlgorithm\LongestCommonSubsequenceExecutor.cs" />
     <Compile Include="StringAlgorithm\LongestCommonSubsequence.cs" />
+    <Compile Include="TowerOfHanoi\HanoiTower.cs" />
+    <Compile Include="TowerOfHanoi\HanoiTowerExecutor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

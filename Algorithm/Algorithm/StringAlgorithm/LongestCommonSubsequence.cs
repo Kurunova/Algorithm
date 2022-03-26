@@ -26,4 +26,73 @@ namespace Algorithm.StringAlgorithm
 			return arr[str1.Length, str2.Length];
 		}
 	}
+	
+	// using System.CodeDom.Compiler;
+	// using System.Collections.Generic;
+	// using System.Collections;
+	// using System.ComponentModel;
+	// using System.Diagnostics.CodeAnalysis;
+	// using System.Globalization;
+	// using System.IO;
+	// using System.Linq;
+	// using System.Reflection;
+	// using System.Runtime.Serialization;
+	// using System.Text.RegularExpressions;
+	// using System.Text;
+	// using System;
+	//
+	//
+	//
+	// class Result
+	// {
+	//
+	// 	/*
+	// 	 * Complete the 'findTotalPower' function below.
+	// 	 *
+	// 	 * The function is expected to return an INTEGER.
+	// 	 * The function accepts INTEGER_ARRAY power as parameter.
+	// 	 */
+	//
+	// 	public static int findTotalPower(List<int> power)
+	// 	{
+	// 		var result = 0;
+	//
+	// 		for(int i = 0; i < power.Count; i++)
+	// 		{            
+	// 			for(int j = power.Count - i; j > 0; j--)
+	// 			{
+	// 				var temp = power.Skip(i).Take(j);
+	// 				result += temp.Min(x => x) * temp.Sum(x => x);
+	// 			}
+	// 		}
+ //        
+	// 		return result > 1000000000 ? result % 1000000007 : result;
+	// 	}
+	// }
+	//
+	// class Solution
+	// {
+	// 	public static void Main(string[] args)
+	// 	{
+	// 		TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+	//
+	// 		int powerCount = Convert.ToInt32(Console.ReadLine().Trim());
+	//
+	// 		List<int> power = new List<int>();
+	//
+	// 		for (int i = 0; i < powerCount; i++)
+	// 		{
+	// 			int powerItem = Convert.ToInt32(Console.ReadLine().Trim());
+	// 			power.Add(powerItem);
+	// 		}
+	//
+	// 		int result = Result.findTotalPower(power);
+	//
+	// 		textWriter.WriteLine(result);
+	//
+	// 		textWriter.Flush();
+	// 		textWriter.Close();
+	// 	}
+	// }
+
 }

@@ -1,5 +1,6 @@
 ﻿using Algorithm.Common;
 using Algorithm.StringAlgorithm;
+using Algorithm.TowerOfHanoi;
 
 namespace Algorithm
 {
@@ -10,8 +11,12 @@ namespace Algorithm
             // IExecute fibonacciExecutor = new FibonacciExecutor();
             // fibonacciExecutor.Execute();
             
-            IExecute longestCommonSubsequenceExecutor = new LongestCommonSubsequenceExecutor();
-            longestCommonSubsequenceExecutor.Execute();
+            // IExecute longestCommonSubsequenceExecutor = new LongestCommonSubsequenceExecutor();
+            // longestCommonSubsequenceExecutor.Execute();
+            
+            IExecute hanoiTowerExecutor = new HanoiTowerExecutor();
+            hanoiTowerExecutor.Execute();
+            
         }
     }
 }
