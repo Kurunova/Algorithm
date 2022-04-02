@@ -16,4 +16,17 @@
     <ProjectReference Include="..\Algorithm\Algorithm.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Source\input12.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Source\ArraySwap2\input12.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\ArraySwap2\input7.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>

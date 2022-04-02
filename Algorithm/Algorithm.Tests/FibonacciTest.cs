@@ -20,7 +20,7 @@ namespace Algorithm.Tests
         {
             var calculated = SimpleFibonacci.Calculate(n);
 
-            Assert.AreEqual(calculated, result);
+            Assert.AreEqual(result, calculated);
         }
     }
 }

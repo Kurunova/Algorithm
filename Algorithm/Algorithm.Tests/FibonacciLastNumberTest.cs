@@ -11,7 +11,7 @@ namespace Algorithm.Tests
         {
             var calculated = FibonacciLastNumber.Calculate(n);
 
-            Assert.AreEqual(calculated, result);
+            Assert.AreEqual(result, calculated);
         }
     }
 }

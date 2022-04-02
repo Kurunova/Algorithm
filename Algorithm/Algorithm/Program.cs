@@ -1,4 +1,5 @@
-﻿using Algorithm.Common;
+﻿using Algorithm.ArrayAlgorithm;
+using Algorithm.Common;
 using Algorithm.StringAlgorithm;
 using Algorithm.TowerOfHanoi;
 
@@ -14,9 +15,12 @@ namespace Algorithm
             // IExecute longestCommonSubsequenceExecutor = new LongestCommonSubsequenceExecutor();
             // longestCommonSubsequenceExecutor.Execute();
             
-            IExecute hanoiTowerExecutor = new HanoiTowerExecutor();
-            hanoiTowerExecutor.Execute();
+            // IExecute hanoiTowerExecutor = new HanoiTowerExecutor();
+            // hanoiTowerExecutor.Execute();
+
             
+            IExecute executor = new ArraySwap2Executor();
+            executor.Execute();
         }
     }
 }
