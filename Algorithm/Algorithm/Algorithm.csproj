@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayAlgorithm\ArrayManipulation.cs" />
     <Compile Include="ArrayAlgorithm\ArraySwap2.cs" />
     <Compile Include="ArrayAlgorithm\ArraySwap2Executor.cs" />
     <Compile Include="Common\IExecute.cs" />

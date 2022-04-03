@@ -10,14 +10,13 @@ using NUnit.Framework;
 namespace Algorithm.Tests
 {
 	[TestFixture]
-	public class ArraySwap2Test
+	public class ArraySwap2Test : BaseTest
 	{
 		[TestCase(991, "input7.txt")]
 		[TestCase(99987, "input12.txt")]
 		public void CheckFromFile(int result, string fileName) 
 		{
-			var directory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-			var path = Path.Combine(directory, "Source/ArraySwap2", fileName);
+			var path = Path.Combine(DirectoryName, fileName);
 			var lines = File.ReadLines(path).ToList(); 
 			
 			var sw = new Stopwatch();
@@ -26,6 +25,9 @@ namespace Algorithm.Tests
 			Test(result, lines[1]);
 
 			sw.Stop();
+			
+			Assert.LessOrEqual(sw.Elapsed, new TimeSpan(0 ,0, 1));
+			
 			Console.WriteLine("Elapsed={0}",sw.Elapsed);
 		}
 		

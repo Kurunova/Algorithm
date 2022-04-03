@@ -27,6 +27,10 @@
     <EmbeddedResource Include="Source\ArraySwap2\input7.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <None Remove="Source\ArrayManipulation\input00.txt" />
+    <EmbeddedResource Include="Source\ArrayManipulation\input00.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
