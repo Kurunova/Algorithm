@@ -12,9 +12,9 @@ namespace Algorithm.Tests
 	public class ArrayManipulationTest : BaseTest
 	{
 		//[TestCase(200, "input00.txt")]
-		[TestCase(7542539201, "input04.txt")]
-		//[TestCase(2497169732, "input07.txt")]
-		public void CheckFromFile(long result, string fileName) 
+		//[TestCase(7542539201, "input04.txt")]
+		[TestCase(2497169732, "input07.txt")]
+		public void CheckFromFile(long result, string fileName)
 		{
 			var path = Path.Combine(DirectoryName, fileName);
 			var lines = File.ReadLines(path).ToList();

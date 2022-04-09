@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace Algorithm.ArrayAlgorithm
@@ -24,6 +22,38 @@ namespace Algorithm.ArrayAlgorithm
 		/// </summary>
 		public static long Execute(int n, List<List<int>> queries)
 		{
+			long max = 0;
+        
+			var resultRow = new long[n];
+
+			// тут мы убрали прочситывание для каждой строки и добавляем вначале + число а потом - число
+			for(int i = 0; i < queries.Count; i++)
+			{
+				var line = queries[i];
+            
+				resultRow[line[0]-1] += line[2];
+				if(line[1] < n)
+					resultRow[line[1]] -= line[2];
+			}
+        
+			long c = 0;
+			for(int i = 0; i < resultRow.Count(); i++)
+			{
+				c += resultRow[i];
+				if(max < c)
+					max = c;
+			}
+        
+			return max;
+		}
+		
+		/// <summary>
+		/// Плохой вариант.
+		/// Проходим и просчитываем для каждой входной строки значения
+		/// Вложенные массивы отрабатывают очень долго 
+		/// </summary>
+		public static long arrayManipulation(int n, List<List<int>> queries)
+		{
 			var resultRow = new long[n];
 
 			for(int i = 0; i < queries.Count; i++)
@@ -35,8 +65,9 @@ namespace Algorithm.ArrayAlgorithm
 					resultRow[j-1] += line[2];
 				}            
 			}
-        
+			
 			return resultRow.Max();
 		}
+
 	}
 }

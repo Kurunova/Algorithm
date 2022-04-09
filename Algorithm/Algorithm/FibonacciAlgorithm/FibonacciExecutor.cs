@@ -1,7 +1,7 @@
 ﻿using System;
 using Algorithm.Common;
 
-namespace Algorithm.Fibonacci
+namespace Algorithm.FibonacciAlgorithm
 {
 	public class FibonacciExecutor : IExecute
 	{
@@ -10,7 +10,7 @@ namespace Algorithm.Fibonacci
 			var line = Console.ReadLine();
 			int inputValue = int.Parse(line);
 
-			var result = SimpleFibonacci.Calculate(inputValue); 
+			var result = BetterFibonacci.Calculate(inputValue); 
 
 			Console.WriteLine(result);
 		}

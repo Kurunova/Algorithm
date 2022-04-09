@@ -1,20 +1,16 @@
-﻿namespace Algorithm.Fibonacci
+﻿namespace Algorithm.FibonacciAlgorithm
 {
-    public class FibonacciLastNumber
+    public class BetterFibonacci
     {
         public static int Calculate(int n)
         {
-            int[] numbers = {0, 1};
+            int[] numbers = {0, 1}; // запоминаем два последних числа и работаем с ними
 
             if (n == 0)
-            {
                 return numbers[0];
-            }
 
             if (n == 1)
-            {
                 return numbers[1];
-            }
 
             for (int i = 2; i <= n; i++)
             {
@@ -28,11 +24,6 @@
         {
             int previousNumber = numbers[1];
             int nextNumber = numbers[0] + numbers[1];
-
-            if (nextNumber > 9) 
-            {
-                nextNumber = nextNumber % 10;
-            }
 
             numbers[0] = previousNumber;
             numbers[1] = nextNumber;

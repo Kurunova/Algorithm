@@ -1,6 +1,6 @@
-﻿namespace Algorithm.Fibonacci
+﻿namespace Algorithm.FibonacciAlgorithm
 {
-    public class SimpleFibonacci
+    public class FibonacciLastNumber
     {
         public static int Calculate(int n)
         {
@@ -28,6 +28,11 @@
         {
             int previousNumber = numbers[1];
             int nextNumber = numbers[0] + numbers[1];
+
+            if (nextNumber > 9) 
+            {
+                nextNumber = nextNumber % 10;
+            }
 
             numbers[0] = previousNumber;
             numbers[1] = nextNumber;

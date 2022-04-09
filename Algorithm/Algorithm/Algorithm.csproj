@@ -50,9 +50,10 @@
     <Compile Include="ArrayAlgorithm\ArraySwap2.cs" />
     <Compile Include="ArrayAlgorithm\ArraySwap2Executor.cs" />
     <Compile Include="Common\IExecute.cs" />
-    <Compile Include="Fibonacci\FibonacciExecutor.cs" />
-    <Compile Include="Fibonacci\FibonacciLastNumber.cs" />
-    <Compile Include="Fibonacci\SimpleFibonacci.cs" />
+    <Compile Include="FibonacciAlgorithm\FibonacciExecutor.cs" />
+    <Compile Include="FibonacciAlgorithm\Fibonacci.cs" />
+    <Compile Include="FibonacciAlgorithm\FibonacciLastNumber.cs" />
+    <Compile Include="FibonacciAlgorithm\BetterFibonacci.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringAlgorithm\ArrayPosition.cs" />
